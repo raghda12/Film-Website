@@ -1,42 +1,83 @@
-# 🍿 usePopcorn — The Ultimate Movie Tracker
+# 🍿 usePopcorn — Ultimate Movie Tracker
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-تطبيق سينمائي متكامل مبني باستخدام **React** و **Tailwind CSS**، يهدف إلى مساعدة المستخدمين على اكتشاف الأفلام، تقييمها، وإدارة قائمة المشاهدة الخاصة بهم بواجهة مستخدم عصرية وسلسة.
+**usePopcorn** is a sleek, highly interactive movie database application. It allows users to search for real-time movie data, view detailed information, rate movies, and maintain a personalized "Watched" list with integrated analytics.
 
 
 
-## 🚀 المميزات (Key Features)
+## 🚀 Key Features
 
-- **Search & Discover**: ابحث عن أي فيلم في العالم بفضل التكامل مع **OMDb API**.
-- **Interactive Rating**: نظام تقييم بالنجوم مخصص يدعم التفاعل بالماوس.
-- **Dynamic Summary**: إحصائيات فورية (متوسط التقييم، عدد الأفلام، وقت المشاهدة الكلي).
-- **Glassmorphism Design**: واجهة مستخدم شفافة وعصرية باستخدام **Tailwind CSS**.
-- **Smooth Animations**: حركات انتقالية سلسة للعناصر باستخدام **Framer Motion**.
-- **Persistent Data**: يتم حفظ قائمة المشاهدة تلقائياً في المتصفح عبر **Local Storage**.
-- **Keyboard Shortcuts**: دعم اختصارات لوحة المفاتيح (مثل `Enter` للبحث و `Esc` للإغلاق).
+- **🔍 Live Movie Search**: Instant fetching from the **OMDb API** as you type.
+- **⭐ Custom Star Rating**: A fully interactive, animated rating component built from scratch.
+- **📊 Personal Dashboard**: Track your cinema habits with automated stats (average ratings, total runtime).
+- **🎨 Premium UI/UX**: Features **Glassmorphism**, smooth staggered animations, and a high-contrast dark theme.
+- **💾 Data Persistence**: Uses **Local Storage** to ensure your watched list remains saved after refresh.
+- **⌨️ Pro Navigation**: Includes custom hooks for global keyboard shortcuts (e.g., `Enter` to focus search).
 
-## 🛠 البناء التقني (Tech Stack)
+---
 
-- **Frontend**: React (Hooks, Context, Refs).
-- **Styling**: Tailwind CSS (Utility-first approach).
-- **Animations**: Framer Motion.
-- **Icons**: Lucide React.
-- **Data Source**: OMDb API.
+## 🛠 Tech Stack
 
-## 📁 تنظيم الكود (Folder Structure)
+- **Framework**: React.js (Functional Components & Hooks)
+- **Styling**: Tailwind CSS (PostCSS)
+- **Animation**: Framer Motion
+- **Icons**: Lucide React
+- **API**: OMDb (Open Movie Database)
 
-يتبع المشروع هيكل **Atomic Design** لضمان فصل المكونات وسهولة صيانتها:
+---
 
-```text
-src/
- ┣ components/
- ┃ ┣ ui/            # المكونات الصغيرة (Logo, StarRating, Loader, Error)
- ┃ ┣ layout/        # الهيكل العام (NavBar, Main, Box)
- ┃ ┣ movies/        # مكونات عرض البحث (MovieList, MovieDetails)
- ┃ ┗ watched/       # مكونات قائمة المشاهدة (WatchedSummary, WatchedList)
- ┣ hooks/           # الـ Custom Hooks (useMovies, useKey, useLocalStorage)
- ┣ App.js           # المكون الأساسي
- ┗ index.css        # إعدادات Tailwind الرئيسية
+## 📁 Project Architecture
+
+The project is organized into modular components to ensure a "Clean Code" approach:
+
+| Component Type | Responsibility |
+| :--- | :--- |
+| **UI** | Global elements like `Logo`, `StarRating`, `Loader`, and `ErrorMessage`. |
+| **Layout** | Structural wrappers like `NavBar`, `Main`, and the toggleable `Box`. |
+| **Movies** | Search results and the deep-dive `MovieDetails` view. |
+| **Watched** | The summary dashboard and the list of saved movies. |
+| **Hooks** | Reusable logic for APIs (`useMovies`), Keys (`useKey`), and Storage. |
+
+---
+
+## 💻 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/usePopcorn.git](https://github.com/your-username/usePopcorn.git)
+
+2. Install dependencies:
+    npm install
+3. Start the application:
+   npm run dev
+---
+##📝 Core Logic: Custom Hooks
+To keep the components lean, the app utilizes specialized hooks:
+
+useMovies(query): Handles complex fetching, loading states, and error handling for the API.
+
+useLocalStorage(initialState, key): Keeps the watched movies list persistent across sessions.
+
+useKey(key, action): Listens for global keydown events to enhance the user experience.
+---
+##🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
+
+Fork the Project.
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+
+Push to the Branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+##⭐ If you find this project useful, please consider giving it a star on GitHub!
+اتال
+فتلال
+   ىحة
+    ىحة
