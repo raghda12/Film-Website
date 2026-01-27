@@ -1,16 +1,42 @@
-# React + Vite
+# 🍿 usePopcorn — The Ultimate Movie Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Currently, two official plugins are available:
+تطبيق سينمائي متكامل مبني باستخدام **React** و **Tailwind CSS**، يهدف إلى مساعدة المستخدمين على اكتشاف الأفلام، تقييمها، وإدارة قائمة المشاهدة الخاصة بهم بواجهة مستخدم عصرية وسلسة.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 المميزات (Key Features)
 
-## Expanding the ESLint configuration
+- **Search & Discover**: ابحث عن أي فيلم في العالم بفضل التكامل مع **OMDb API**.
+- **Interactive Rating**: نظام تقييم بالنجوم مخصص يدعم التفاعل بالماوس.
+- **Dynamic Summary**: إحصائيات فورية (متوسط التقييم، عدد الأفلام، وقت المشاهدة الكلي).
+- **Glassmorphism Design**: واجهة مستخدم شفافة وعصرية باستخدام **Tailwind CSS**.
+- **Smooth Animations**: حركات انتقالية سلسة للعناصر باستخدام **Framer Motion**.
+- **Persistent Data**: يتم حفظ قائمة المشاهدة تلقائياً في المتصفح عبر **Local Storage**.
+- **Keyboard Shortcuts**: دعم اختصارات لوحة المفاتيح (مثل `Enter` للبحث و `Esc` للإغلاق).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 البناء التقني (Tech Stack)
+
+- **Frontend**: React (Hooks, Context, Refs).
+- **Styling**: Tailwind CSS (Utility-first approach).
+- **Animations**: Framer Motion.
+- **Icons**: Lucide React.
+- **Data Source**: OMDb API.
+
+## 📁 تنظيم الكود (Folder Structure)
+
+يتبع المشروع هيكل **Atomic Design** لضمان فصل المكونات وسهولة صيانتها:
+
+```text
+src/
+ ┣ components/
+ ┃ ┣ ui/            # المكونات الصغيرة (Logo, StarRating, Loader, Error)
+ ┃ ┣ layout/        # الهيكل العام (NavBar, Main, Box)
+ ┃ ┣ movies/        # مكونات عرض البحث (MovieList, MovieDetails)
+ ┃ ┗ watched/       # مكونات قائمة المشاهدة (WatchedSummary, WatchedList)
+ ┣ hooks/           # الـ Custom Hooks (useMovies, useKey, useLocalStorage)
+ ┣ App.js           # المكون الأساسي
+ ┗ index.css        # إعدادات Tailwind الرئيسية
