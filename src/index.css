@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1a1d21] text-slate-200 antialiased selection:bg-yellow-400 selection:text-black;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#1a1d21];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#343a40] rounded-full hover:bg-yellow-500/50 transition-colors;
+  }
+}
