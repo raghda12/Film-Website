@@ -1,16 +1,81 @@
-# React + Vite
+# 🍿 usePopcorn — Ultimate Movie Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Currently, two official plugins are available:
+**usePopcorn** is a sleek, highly interactive movie database application. It allows users to search for real-time movie data, view detailed information, rate movies, and maintain a personalized "Watched" list with integrated analytics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Key Features
 
-## Expanding the ESLint configuration
+- **🔍 Live Movie Search**: Instant fetching from the **OMDb API** as you type.
+- **⭐ Custom Star Rating**: A fully interactive, animated rating component built from scratch.
+- **📊 Personal Dashboard**: Track your cinema habits with automated stats (average ratings, total runtime).
+- **🎨 Premium UI/UX**: Features **Glassmorphism**, smooth staggered animations, and a high-contrast dark theme.
+- **💾 Data Persistence**: Uses **Local Storage** to ensure your watched list remains saved after refresh.
+- **⌨️ Pro Navigation**: Includes custom hooks for global keyboard shortcuts (e.g., `Enter` to focus search).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: React.js (Functional Components & Hooks)
+- **Styling**: Tailwind CSS (PostCSS)
+- **Animation**: Framer Motion
+- **Icons**: Lucide React
+- **API**: OMDb (Open Movie Database)
+
+---
+
+## 📁 Project Architecture
+
+The project is organized into modular components to ensure a "Clean Code" approach:
+
+| Component Type | Responsibility |
+| :--- | :--- |
+| **UI** | Global elements like `Logo`, `StarRating`, `Loader`, and `ErrorMessage`. |
+| **Layout** | Structural wrappers like `NavBar`, `Main`, and the toggleable `Box`. |
+| **Movies** | Search results and the deep-dive `MovieDetails` view. |
+| **Watched** | The summary dashboard and the list of saved movies. |
+| **Hooks** | Reusable logic for APIs (`useMovies`), Keys (`useKey`), and Storage. |
+
+---
+
+## 💻 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/usePopcorn.git](https://github.com/your-username/usePopcorn.git)
+
+2. Install dependencies:
+    ```bash
+    npm install
+3. Start the application:
+    ```bash
+   npm run dev
+---
+##📝 Core Logic: Custom Hooks
+To keep the components lean, the app utilizes specialized hooks:
+
+useMovies(query): Handles complex fetching, loading states, and error handling for the API.
+
+useLocalStorage(initialState, key): Keeps the watched movies list persistent across sessions.
+
+useKey(key, action): Listens for global keydown events to enhance the user experience.
+---
+##🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
+
+Fork the Project.
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+
+Push to the Branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+##⭐ If you find this project useful, please consider giving it a star on GitHub!
