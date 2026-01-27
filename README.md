@@ -50,8 +50,10 @@ The project is organized into modular components to ensure a "Clean Code" approa
    git clone [https://github.com/your-username/usePopcorn.git](https://github.com/your-username/usePopcorn.git)
 
 2. Install dependencies:
+    ```bash
     npm install
 3. Start the application:
+    ```bash
    npm run dev
 ---
 ##📝 Core Logic: Custom Hooks
@@ -77,7 +79,3 @@ Push to the Branch (git push origin feature/AmazingFeature).
 Open a Pull Request.
 
 ##⭐ If you find this project useful, please consider giving it a star on GitHub!
-اتال
-فتلال
-   ىحة
-    ىحة
